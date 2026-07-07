@@ -1,0 +1,4 @@
+PSNR moyen : 25.03 dB
+SSIM moyen : 0.8163
+Écart-type PSNR : 2.40
+Écart-type SSIM : 0.0564

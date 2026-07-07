@@ -1,0 +1,9 @@
+Version       : v4.3_FINAL
+Epoch         : 75/80
+Best PSNR     : 24.62 dB
+Val PSNR      : 24.62 dB
+Val SSIM      : 0.7303
+LAMBDA_PIXEL  : 1.5
+LAMBDA_SSIM   : 0.6
+LAMBDA_ADV    : 0.0005
+W-dist        : 13.070

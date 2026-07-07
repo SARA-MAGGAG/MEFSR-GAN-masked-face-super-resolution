@@ -1,0 +1,10 @@
+Version          : v2.2
+Epochs réalisées : 52
+PSNR             : 24.28 dB
+SSIM             : 0.9593
+Best val loss    : 0.4749
+Normalisation    : [0, 255]
+RRDB blocks      : 8 (corrigé depuis 4)
+Lambdas          : Pixel=0.5, Percep=0.4, SSIM=0.4, ID=0.2
+VGG norm         : ImageNet (corrigée)
+Augmentation     : flip_h uniquement (flip_v et rot. supprimés)

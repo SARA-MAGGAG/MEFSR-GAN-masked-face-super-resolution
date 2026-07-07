@@ -1,0 +1,36 @@
+======================================================================
+RAPPORT D'ÉVALUATION DE SIMILARITÉ IDENTITÉ (FaceNet)
+======================================================================
+
+Total images test : 2469
+Similarité cosinus moyenne : 0.7317 ± 0.1075
+Distance euclidienne moyenne : 0.7191
+
+Répartition par catégorie :
+  Excellent    :  244 (  9.9%)
+  Bon          : 1437 ( 58.2%)
+  Moyen        :  708 ( 28.7%)
+  Faible       :   67 (  2.7%)
+  Très faible  :   13 (  0.5%)
+
+Top 5 meilleures similarités :
+  1. 001661.png : cos=0.9315, dist=0.3701
+  2. 000374.png : cos=0.9292, dist=0.3764
+  3. 002043.png : cos=0.9231, dist=0.3921
+  4. 000712.png : cos=0.9162, dist=0.4093
+  5. 000747.png : cos=0.9160, dist=0.4098
+
+Top 5 pires similarités :
+  1. 001978.png : cos=0.1115, dist=1.3330
+  2. 001941.png : cos=0.1510, dist=1.3031
+  3. 001166.png : cos=0.1771, dist=1.2829
+  4. 001925.png : cos=0.2377, dist=1.2348
+  5. 001494.png : cos=0.2452, dist=1.2286
+
+Fichiers générés dans ce rapport :
+  - results_with_categories.json
+  - top10_comparison.png
+  - category_histogram.png
+  - rapport_synthese.txt
+  - cosine_distribution.png
+  - worst10_comparison.png

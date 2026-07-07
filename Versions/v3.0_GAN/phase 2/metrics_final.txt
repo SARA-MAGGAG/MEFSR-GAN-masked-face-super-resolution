@@ -1,0 +1,3 @@
+PSNR : 23.45 ± 2.19 dB
+SSIM : 0.7711 ± 0.0675
+Nb images testées : 2469
