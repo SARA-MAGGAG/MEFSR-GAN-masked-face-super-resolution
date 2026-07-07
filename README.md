@@ -83,12 +83,6 @@ La préservation de l'identité a été évaluée en calculant la **similarité 
 
 ![Distribution par catégorie de similarité](./identity_evaluation/identity_evaluation_report_20260606_173608/category_histogram.png)
 
-**Meilleurs cas de reconstruction (Top 10)**
-![Top 10 des reconstructions les plus fidèles](./identity_evaluation/identity_evaluation_report_20260606_173608/top10_comparison.png)
-
-**Cas les plus difficiles (Worst 10)**
-![10 cas de reconstruction les plus difficiles](./identity_evaluation/identity_evaluation_report_20260606_173608/worst10_comparison.png)
-
 > Détails complets et méthodologie dans [`identity_evaluation/`](./identity_evaluation/).
 
 ### Comparaison des versions du modèle
