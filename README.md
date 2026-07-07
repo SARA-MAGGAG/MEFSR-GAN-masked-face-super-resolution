@@ -89,6 +89,11 @@ La préservation de l'identité a été évaluée en calculant la **similarité 
 
 ![Distribution par catégorie de similarité](./identity_evaluation/identity_evaluation_report_20260606_173608/category_histogram.png)
 
+**Meilleurs cas de reconstruction (Top 10)**
+![Top 10 des reconstructions les plus fidèles](./identity_evaluation/identity_evaluation_report_20260606_173608/top10_comparison.png)
+
+**Cas les plus difficiles (Worst 10)**
+![10 cas de reconstruction les plus difficiles](./identity_evaluation/identity_evaluation_report_20260606_173608/worst10_comparison.png)
 
 > Détails complets et méthodologie dans [`identity_evaluation/`](./identity_evaluation/).
 
@@ -131,18 +136,23 @@ La stratégie d'entraînement **conjointe (end-to-end)** avec 8 blocs RRDB (v3.1
 ### 🖼️ Résultats qualitatifs par version
 
 **v1**
+
 ![Résultats version 1](./assets/results%20version%201.jpg)
 
 **v2**
+
 ![Résultats version 2](./assets/results%20version%202.jpg)
 
 **v3.0 GAN**
+
 ![Résultats version 3](./assets/results%20version%203.jpg)
 
 **v3.1 GAN (conjoint) — version finale ✅**
+
 ![Résultats version 3.1 conjoint](./assets/results%20version%203.1%20conjoint.png)
 
 **v4 WGAN-GP**
+
 ![Résultats version 4](./assets/results_version%204.png)
 
 ### Comparaison visuelle des 3 versions GAN (v3.0 / v3.1 / v4)
