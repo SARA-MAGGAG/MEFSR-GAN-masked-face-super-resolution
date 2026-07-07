@@ -7,7 +7,7 @@ Architecture de deep learning permettant de **retirer l'occlusion d'un masque fa
 > 🎓 Master Génie Informatique et Mathématiques pour la Data Science — ENSA Khouribga
 > **Auteure :** Sara Maggag
 > **Encadrement :** Pr. Lamghari Nidal (superviseur), Yazid Safiny (co-superviseur)
-> **Jury :** Pr. Soussi (Président), Pr. Tabaa (Examinateur), Pr. Lamghari Nidal (Superviseur)
+
  
 ---
  
