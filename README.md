@@ -89,6 +89,11 @@ La préservation de l'identité a été évaluée en calculant la **similarité 
 
 ![Distribution par catégorie de similarité](./identity_evaluation/identity_evaluation_report_20260606_173608/category_histogram.png)
 
+**Meilleurs cas de reconstruction (Top 10)**
+![Top 10 des reconstructions les plus fidèles](./identity_evaluation/identity_evaluation_report_20260606_173608/top10_comparison.png)
+
+**Cas les plus difficiles (Worst 10)**
+![10 cas de reconstruction les plus difficiles](./identity_evaluation/identity_evaluation_report_20260606_173608/worst10_comparison.png)
 
 > Détails complets et méthodologie dans [`identity_evaluation/`](./identity_evaluation/).
 
@@ -201,15 +206,13 @@ Chaque dossier de version contient : notebook d'entraînement, logs d'entraînem
 - **Composants clés :** RRDB, PixelShuffle, CBAM, PatchGAN, perte perceptuelle VGG16, perte adversariale LSGAN
 - **Évaluation :** PSNR, SSIM, embeddings FaceNet (similarité cosinus + distance euclidienne)
 
-## 📥 Modèles pré-entraînés
+## 📥 Modèle pré-entraîné
 
-Les poids des modèles (checkpoints `.pth`) ne sont pas hébergés sur GitHub en raison de leur taille. Ils sont disponibles ici :
+Les poids du modèle final (`best_model` et `latest_checkpoint`, format `.pth`) ne sont pas hébergés sur GitHub en raison de leur taille, mais sont disponibles publiquement sur Kaggle :
 
-| Version | Lien |
-|---|---|
-| v3.1 (finale) | *[à compléter — lien Kaggle/Hugging Face]* |
-| v3.0 | *[à compléter]* |
-| v4 WGAN-GP | *[à compléter]* |
+| Version | PSNR | SSIM | Lien |
+|---|---|---|---|
+| **v3.1 GAN (conjoint) — finale** ✅ | 24,49 ± 2,38 dB | 0,7902 ± 0,0623 | [Kaggle — version-3-1-gan](https://www.kaggle.com/datasets/saramaggag/version-3-1-gan/data) |
 
 ## 🚀 Perspectives
 
