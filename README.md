@@ -72,7 +72,6 @@ La préservation de l'identité a été évaluée en calculant la **similarité 
 | Métrique | Résultat |
 |---|---|
 | Similarité cosinus moyenne (identité préservée) | **96,8 %** |
-| Distance euclidienne moyenne | *[à compléter depuis `identity_evaluation_report`]* |
  
 <!-- 📷 INSÉRER ICI : distribution des scores de similarité cosinus (histogramme) sur le test set -->
 <!-- 📷 INSÉRER ICI : exemples de paires (reconstruite / référence) avec leur score d'identité -->
