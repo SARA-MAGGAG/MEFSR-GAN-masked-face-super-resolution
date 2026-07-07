@@ -4,6 +4,8 @@
 
 Architecture de deep learning permettant de **retirer l'occlusion d'un masque facial** et de réaliser une **super-résolution ×4** (32×32 → 128×128) en une seule passe end-to-end.
 
+![Explication de l'acronyme MEFSR-GAN](./assets/Acronyme.png)
+
 > 🎓 Master Génie Informatique et Mathématiques pour la Data Science — ENSA Khouribga
 > **Auteure :** Sara Maggag
 > **Encadrement :** Pr. Lamghari Nidal (superviseur), Yazid Safiny (co-superviseur)
@@ -40,6 +42,8 @@ Le module **EdgeFusionAttention** est l'apport original de ce travail : il combi
 
 ![Fonction de perte composite](./assets/sch%C3%A9ma%20fonction%20du%20perte.png)
 
+![Stratégie progressive de reconstruction](./assets/schema%20progressive.png)
+
 ## 📊 Dataset
 
 - **Source :** CelebA-HQ, avec masques synthétiques appliqués
@@ -51,6 +55,8 @@ Le module **EdgeFusionAttention** est l'apport original de ce travail : il combi
   | Test | 2 469 |
 - **Format :** entrée 32×32 (image masquée) → sortie 128×128 (image restaurée, ×4)
 - **Limite connue :** ~24k paires utilisées contre 162k dans CelebA complet → peut limiter la capacité de généralisation ; masques synthétiques uniquement (pas de masques réels variés)
+
+![Exemple de paire dataset — input masqué 32×32 vs target 128×128](./assets/dataset_example.jpg)
 
 > Le dataset complet n'est pas hébergé sur ce dépôt (volumineux). Il est disponible sur Kaggle : **[masked-celebahq-images](https://www.kaggle.com/datasets/saramaggag/masked-celebahq-images)**. Voir [`data/README.md`](./data/README.md) pour les instructions détaillées.
 
@@ -82,6 +88,12 @@ La préservation de l'identité a été évaluée en calculant la **similarité 
 ![Distribution de la similarité cosinus](./identity_evaluation/identity_evaluation_report_20260606_173608/cosine_distribution.png)
 
 ![Distribution par catégorie de similarité](./identity_evaluation/identity_evaluation_report_20260606_173608/category_histogram.png)
+
+**Meilleurs cas de reconstruction (Top 10)**
+![Top 10 des reconstructions les plus fidèles](./identity_evaluation/identity_evaluation_report_20260606_173608/top10_comparison.png)
+
+**Cas les plus difficiles (Worst 10)**
+![10 cas de reconstruction les plus difficiles](./identity_evaluation/identity_evaluation_report_20260606_173608/worst10_comparison.png)
 
 > Détails complets et méthodologie dans [`identity_evaluation/`](./identity_evaluation/).
 
@@ -137,6 +149,12 @@ La stratégie d'entraînement **conjointe (end-to-end)** avec 8 blocs RRDB (v3.1
 
 **v4 WGAN-GP**
 ![Résultats version 4](./assets/results_version%204.png)
+
+### Comparaison visuelle des 3 versions GAN (v3.0 / v3.1 / v4)
+
+Comparaison sur 7 images du test set, montrant l'entrée basse résolution masquée, les sorties des 3 versions GAN (avec PSNR par image), et la référence haute résolution :
+
+![Comparaison des trois versions GAN sur 7 images du test set](./assets/comparaison_7x5_trois_modeles.png)
 
 ### Étude d'ablation — apport des composantes
 
