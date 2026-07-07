@@ -7,7 +7,7 @@ Architecture de deep learning permettant de **retirer l'occlusion d'un masque fa
 > 🎓 Master Génie Informatique et Mathématiques pour la Data Science — ENSA Khouribga
 > **Auteure :** Sara Maggag
 > **Encadrement :** Pr. Lamghari Nidal (superviseur), Yazid Safiny (co-superviseur)
-
+> **Jury :** Pr. Soussi (Président), Pr. Tabaa (Examinateur), Pr. Lamghari Nidal (Superviseur)
  
 ---
  
@@ -46,7 +46,7 @@ Le module **EdgeFusionAttention** est l'apport original de ce travail : il combi
   | Test | 2 469 |
 - **Format :** entrée 32×32 (image masquée) → sortie 128×128 (image restaurée, ×4)
 - **Limite connue :** ~24k paires utilisées contre 162k dans CelebA complet → peut limiter la capacité de généralisation ; masques synthétiques uniquement (pas de masques réels variés)
-> Le dataset complet n'est pas hébergé sur ce dépôt (volumineux). Voir [`data/README.md`](./data/README.md) pour les instructions de téléchargement et de préparation.
+> Le dataset complet n'est pas hébergé sur ce dépôt (volumineux). Il est disponible sur Kaggle : **[masked-celebahq-images](https://www.kaggle.com/datasets/saramaggag/masked-celebahq-images)**. Voir [`data/README.md`](./data/README.md) pour les instructions détaillées.
  
 ## 🏆 Résultats — Modèle final (v3.1)
  
@@ -72,6 +72,7 @@ La préservation de l'identité a été évaluée en calculant la **similarité 
 | Métrique | Résultat |
 |---|---|
 | Similarité cosinus moyenne (identité préservée) | **96,8 %** |
+| Distance euclidienne moyenne | *[à compléter depuis `identity_evaluation_report`]* |
  
 <!-- 📷 INSÉRER ICI : distribution des scores de similarité cosinus (histogramme) sur le test set -->
 <!-- 📷 INSÉRER ICI : exemples de paires (reconstruite / référence) avec leur score d'identité -->
